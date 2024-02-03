@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85510413-3e68-4be7-9449-e6a8469787d8" name="Changes" comment="added login">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rirum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tailwindcss.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/auth/signin/+page.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/auth/signin/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+layout.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/account/+page.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/account/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/SidebarNavigation.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SidebarNavigation.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/server/lucia/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/lucia/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/validations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/validations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth/signup/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/signup/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth/signup/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/signup/+page.svelte" afterDir="false" />
+    <list default="true" id="85510413-3e68-4be7-9449-e6a8469787d8" name="Changes" comment="changed db variable">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,15 +74,44 @@
       <workItem from="1706940970392" duration="225000" />
       <workItem from="1706941367805" duration="277000" />
       <workItem from="1706941673361" duration="7875000" />
-      <workItem from="1706949591835" duration="8759000" />
+      <workItem from="1706949591835" duration="10165000" />
     </task>
+    <task id="LOCAL-00001" summary="added login">
+      <option name="closed" value="true" />
+      <created>1706968728788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706968728788</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed db variable">
+      <option name="closed" value="true" />
+      <created>1706969491714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706969491714</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added login" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login" />
+    <MESSAGE value="changed db variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed db variable" />
   </component>
 </project>
