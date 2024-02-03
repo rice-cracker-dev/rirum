@@ -29,6 +29,7 @@
   storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
   import Navbar from '$lib/components/Navbar.svelte';
+  import Sidebar from '$lib/components/Sidebar.svelte';
 </script>
 
 <!-- App Shell -->
@@ -38,5 +39,11 @@
     <Navbar />
   </svelte:fragment>
   <!-- Page Route Content -->
-  <slot />
+  <div class="container mx-auto mt-16 flex gap-32">
+    <Sidebar />
+
+    <div class="flex-1">
+      <slot />
+    </div>
+  </div>
 </AppShell>
