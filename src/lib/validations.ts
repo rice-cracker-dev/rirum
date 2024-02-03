@@ -7,11 +7,8 @@ export const validateUsername = (username: unknown): [boolean, string | null] =>
     return [false, 'Username must be between 4 and 32 characters.'];
   }
 
-  if (!/^[a-z0-9_-]+$/.test(username)) {
-    return [
-      false,
-      'Username must only contain lowercase letters, numbers, underscores, and hyphens.',
-    ];
+  if (!/^[a-zA-Z0-9_-]+$/.test(username)) {
+    return [false, 'Username must only contain letters, numbers, underscores, and hyphens.'];
   }
 
   return [true, null];

@@ -1,8 +1,14 @@
-import type { Actions } from './$types';
-import { fail } from '@sveltejs/kit';
-import { generateId } from 'lucia';
-import { Argon2id } from 'oslo/password';
+import type { Actions, PageServerLoad } from './$types';
+import { Prisma } from '@prisma/client';
+import { fail, redirect } from '@sveltejs/kit';
 import { validatePassword, validateUsername } from '$lib/validations';
+import { createUserAndSession } from '$lib/server/lucia';
+
+export const load: PageServerLoad = async (event) => {
+  if (event.locals.user) {
+    redirect(302, '/');
+  }
+};
 
 export const actions: Actions = {
   default: async (event) => {
@@ -21,7 +27,26 @@ export const actions: Actions = {
       return fail(400, { message: passwordReason });
     }
 
-    const userId = generateId(15);
-    const hashedPassword = await new Argon2id().hash(password);
+    try {
+      const { sessionCookie } = await createUserAndSession(username, password);
+
+      event.cookies.set(sessionCookie.name, sessionCookie.value, {
+        path: '.',
+        ...sessionCookie.attributes,
+      });
+    } catch (o: unknown) {
+      console.log(JSON.stringify(o));
+
+      if (o instanceof Prisma.PrismaClientKnownRequestError) {
+        switch (o.code) {
+          case 'P2002':
+            return fail(400, { message: 'Username already taken.' });
+        }
+      }
+
+      return fail(500, { message: 'An error occurred while creating your account.' });
+    }
+
+    redirect(302, '/');
   },
 };

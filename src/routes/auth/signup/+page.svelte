@@ -1,22 +1,32 @@
 <script lang="ts">
+  import type { ActionData } from './$types';
   import { enhance } from '$app/forms';
   import { validatePassword, validateUsername } from '$lib/validations';
+
+  export let form: ActionData;
 
   let formUsername = '';
   let formPassword = '';
   let formIsRequiredAge = false;
   let formIsTosAccepted = false;
 
-  $: [isUsernameValid, usernameReason] = validateUsername(formUsername);
-  $: [isPasswordValid, passwordReason] = validatePassword(formPassword);
+  // this is to fix a weird bug in Webstorm's Svelte plugin
+  let [isUsernameValid, usernameReason] = [false, null];
+  let [isPasswordValid, passwordReason] = [false, null];
+
+  $: {
+    [isUsernameValid, usernameReason] = validateUsername(formUsername);
+    [isPasswordValid, passwordReason] = validatePassword(formPassword);
+  }
 </script>
 
-<h2 class="h2">Sign up</h2>
-<!-- a fun and inviting sign up message -->
-<p class="text-surface-600-300-token mt-4">
-  Or
-  <a href="/auth/signin" class="anchor">sign in</a> if you already have an account.
-</p>
+<div class="space-y-2">
+  <h2 class="h2">Sign up</h2>
+  <p class="text-surface-600-300-token">
+    Or
+    <a href="/auth/signin" class="anchor">sign in</a> if you already have an account.
+  </p>
+</div>
 
 <form method="post" class="mt-8 max-w-md space-y-4" use:enhance>
   <label class="label">
@@ -59,6 +69,10 @@
       I agree to the <a href="/legal/tos" class="anchor">terms of service</a> of this website.
     </span>
   </label>
+
+  {#if form && !form.success}
+    <p class="text-error-400-500-token">{form.message}</p>
+  {/if}
 
   <button
     type="submit"

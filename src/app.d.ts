@@ -9,13 +9,16 @@ declare global {
       user: import('lucia').User | null;
       session: import('lucia').Session | null;
     }
-    // interface PageData {}
+    interface PageData {
+      user: import('lucia').User | null;
+    }
     // interface Error {}
     // interface Platform {}
   }
 
   // for debugging purposes
+  // eslint-disable-next-line no-var
   var __prisma: PrismaClient;
 }
 
-export {}
+export {};

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85510413-3e68-4be7-9449-e6a8469787d8" name="Changes" comment="added login">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rirum.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tailwindcss.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/auth/signin/+page.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/auth/signin/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+layout.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/account/+page.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/account/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/SidebarNavigation.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SidebarNavigation.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/server/lucia/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/lucia/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/validations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/validations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/auth/signup/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/signup/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/auth/signup/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth/signup/+page.svelte" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2bqKnjp3Mb2UHu7Yy57wCUsKjKA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/khoa/projects/rirum/src/routes/auth&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/khoa/projects/rirum/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/auth" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-e293885f7bc4-JavaScript-WS-241.10840.2" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85510413-3e68-4be7-9449-e6a8469787d8" name="Changes" comment="" />
+      <created>1706937340679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706937340679</updated>
+      <workItem from="1706937342002" duration="10000" />
+      <workItem from="1706937368554" duration="2340000" />
+      <workItem from="1706940535167" duration="296000" />
+      <workItem from="1706940941069" duration="3000" />
+      <workItem from="1706940970392" duration="225000" />
+      <workItem from="1706941367805" duration="277000" />
+      <workItem from="1706941673361" duration="7875000" />
+      <workItem from="1706949591835" duration="8759000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added login" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login" />
+  </component>
+</project>
