@@ -12,7 +12,25 @@ export default {
     join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}'),
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            code: {
+              '&::before': { content: 'none !important' },
+              '&::after': { content: 'none !important' },
+              '&': { fontWeight: 'normal' },
+            },
+
+            p: {
+              '&::before': { content: 'none !important' },
+              '&::after': { content: 'none !important' },
+              '&': { fontWeight: 'normal' },
+            },
+          },
+        },
+      },
+    },
   },
   plugins: [
     forms,

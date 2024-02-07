@@ -10,14 +10,8 @@
   let formIsRequiredAge = false;
   let formIsTosAccepted = false;
 
-  // this is to fix a weird bug in Webstorm's Svelte plugin
-  let [isUsernameValid, usernameReason] = [false, null];
-  let [isPasswordValid, passwordReason] = [false, null];
-
-  $: {
-    [isUsernameValid, usernameReason] = validateUsername(formUsername);
-    [isPasswordValid, passwordReason] = validatePassword(formPassword);
-  }
+  $: [isUsernameValid, usernameReason] = validateUsername(formUsername);
+  $: [isPasswordValid, passwordReason] = validatePassword(formPassword);
 </script>
 
 <div class="space-y-2">

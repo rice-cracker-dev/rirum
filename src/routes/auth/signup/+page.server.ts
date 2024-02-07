@@ -19,12 +19,12 @@ export const actions: Actions = {
 
     const [isUsernameValid, usernameReason] = validateUsername(username);
     if (!isUsernameValid) {
-      return fail(400, { message: usernameReason });
+      return fail(400, { success: false, message: usernameReason });
     }
 
     const [isPasswordValid, passwordReason] = validatePassword(password);
     if (!isPasswordValid) {
-      return fail(400, { message: passwordReason });
+      return fail(400, { success: false, message: passwordReason });
     }
 
     try {
@@ -35,16 +35,19 @@ export const actions: Actions = {
         ...sessionCookie.attributes,
       });
     } catch (o: unknown) {
-      console.log(JSON.stringify(o));
+      console.error(o);
 
       if (o instanceof Prisma.PrismaClientKnownRequestError) {
         switch (o.code) {
           case 'P2002':
-            return fail(400, { message: 'Username already taken.' });
+            return fail(400, { success: false, message: 'Username already taken.' });
         }
       }
 
-      return fail(500, { message: 'An error occurred while creating your account.' });
+      return fail(500, {
+        success: false,
+        message: 'An error occurred while creating your account.',
+      });
     }
 
     redirect(302, '/');

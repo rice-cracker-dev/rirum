@@ -1,3 +1,4 @@
+import type { JSONContent } from '@tiptap/core';
 import { generateId, Lucia } from 'lucia';
 import { PrismaAdapter } from '@lucia-auth/adapter-prisma';
 import { dev } from '$app/environment';
@@ -16,7 +17,10 @@ export const lucia = new Lucia(adapter, {
 
   getUserAttributes: (attributes) => {
     return {
+      id: attributes.id,
       username: attributes.username,
+      bio: attributes.bio,
+      signature: attributes.signature,
     };
   },
 });
@@ -68,5 +72,8 @@ declare module 'lucia' {
 }
 
 interface DatabaseUserAttributes {
+  id: string;
   username: string;
+  bio: string;
+  signature?: JSONContent;
 }

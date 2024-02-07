@@ -1,0 +1,23 @@
+code {
+  background-color: var(--tw-prose-pre-bg);
+  padding: 0.25rem;
+  border-radius: var(--theme-rounded-base);
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.prose a {
+  @apply anchor;
+}
+
+.prose > * {
+  @apply my-0;
+}
+
+.rte-input-show-ui .tiptap {
+  @apply min-h-[16rem] p-2;
+}

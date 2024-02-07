@@ -42,7 +42,7 @@
   <div class="container mx-auto mt-16 flex gap-32">
     <Sidebar />
 
-    <div class="flex-1">
+    <div class="flex-1 overflow-hidden px-4">
       <slot />
     </div>
   </div>

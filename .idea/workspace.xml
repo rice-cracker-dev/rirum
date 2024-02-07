@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85510413-3e68-4be7-9449-e6a8469787d8" name="Changes" comment="changed adapter to node">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/RichTextEditor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/RichTextEditor.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/RichTextEditor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/RichTextViewer.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/tests/rte/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tailwindcss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tailwindcss.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dashboard/account/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard/account/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dashboard/account/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard/account/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,27 +40,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/khoa/projects/rirum/src/routes/auth",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "settings.editor.selected.configurable": "terminal",
-    "ts.external.directory.path": "/home/khoa/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/khoa/projects/rirum/src/lib/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/khoa/projects/rirum/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/components" />
       <recent name="$PROJECT_DIR$/src/routes/auth" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/tests/rte" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -75,6 +90,12 @@
       <workItem from="1706941367805" duration="277000" />
       <workItem from="1706941673361" duration="7875000" />
       <workItem from="1706949591835" duration="11135000" />
+      <workItem from="1707044705110" duration="633000" />
+      <workItem from="1707046037879" duration="766000" />
+      <workItem from="1707117261952" duration="4308000" />
+      <workItem from="1707123537677" duration="3065000" />
+      <workItem from="1707126664823" duration="5284000" />
+      <workItem from="1707290546467" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="added login">
       <option name="closed" value="true" />

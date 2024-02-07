@@ -18,18 +18,18 @@ export const actions: Actions = {
     const password = formData.get('password');
 
     if (typeof username !== 'string' || typeof password !== 'string') {
-      return fail(400, { message: 'Invalid username or password.' });
+      return fail(400, { success: false, message: 'Invalid username or password.' });
     }
 
     const user = await prisma.user.findUnique({ where: { username } });
 
     if (!user) {
-      return fail(400, { message: 'Invalid username.' });
+      return fail(400, { success: false, message: 'Invalid username.' });
     }
 
     const validPassword = await new Argon2id().verify(user.hashed_password, password);
     if (!validPassword) {
-      return fail(400, { message: 'Invalid password.' });
+      return fail(400, { success: false, message: 'Invalid password.' });
     }
 
     const { sessionCookie } = await createSession(user.id);
