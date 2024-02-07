@@ -9,7 +9,6 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "db:push:production": "dotenv -e .env.production -- prisma db push",
-    "postinstall": "prisma db push",
     "start": "node build",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write ."

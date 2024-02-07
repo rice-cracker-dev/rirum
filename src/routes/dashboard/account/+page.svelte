@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { ActionData, PageData } from './$types';
   import { page } from '$app/stores';
-  import { enhance } from '$app/forms';
   import { validatePassword, validateUsername } from '$lib/validations';
   import FormLoadingWrapper from '$lib/components/FormLoadingWrapper.svelte';
   import Icon from '@iconify/svelte';

@@ -11,7 +11,6 @@
   import Icon from '@iconify/svelte';
   // import ColorPicker from 'svelte-awesome-color-picker';
   // import ColorPickerWrapper from './ColorPickerWrapper.svelte';
-  import './RichTextEditor.scss';
 
   type ColorDialogSection = {
     name: string;
